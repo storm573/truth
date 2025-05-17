@@ -1,0 +1,157 @@
+{
+  "claim": "This cycle of air movement creates the weather.",
+  "claim_type": "factual",
+  "timestamp": "2025-05-17T22:31:44.686197",
+  "perspectives": {
+    "supporting": {
+      "arguments": [
+        {
+          "text": "Atmospheric circulation transports heat over the surface of the Earth that affects the water <strong>cycle</strong>, including the formation of clouds and precipitation events. <strong>The</strong> <strong>movement</strong> <strong>of</strong> <strong>air</strong> masses brings us our daily <strong>weather</strong>, and long-term patterns in circulation determine regional climate and ecosystems.",
+          "source_url": "https://ugc.berkeley.edu/background-content/atmospheric-circulation/",
+          "source_title": "Atmospheric circulation - Understanding Global Change",
+          "confidence": 0.7,
+          "timestamp": "2025-05-17T22:31:44.686140"
+        },
+        {
+          "text": "MS-ESS2-5 Collect data to provide <strong>evidence</strong> for how the motions and complex interactions <strong>of</strong> <strong>air</strong> masses results in changes in <strong>weather</strong> conditions.",
+          "source_url": "https://manoa.hawaii.edu/exploringourfluidearth/physical/atmospheric-effects/wind-formation",
+          "source_title": "Wind Formation | manoa.hawaii.edu/ExploringOurFluidEarth",
+          "confidence": 0.7,
+          "timestamp": "2025-05-17T22:31:44.686149"
+        },
+        {
+          "text": "Cyclone (Low Pressure) in the Northern Hemisphere rotating counter-clockwise.  At the center of each <strong>air</strong> mass is typically a high pressure. Where these <strong>air</strong> masses meet is a <strong>weather</strong> front. When they meet, one mass rises and <strong>creates</strong> a local low pressure along the front. This means <strong>that</strong> <strong>weather</strong> ...",
+          "source_url": "https://openwa.pressbooks.pub/sfccweatherandclimate/chapter/movement-in-the-atmosphere/",
+          "source_title": "Movement in the Atmosphere \u2013 SFCC Weather and Climate",
+          "confidence": 0.7,
+          "timestamp": "2025-05-17T22:31:44.686152"
+        },
+        {
+          "text": "A few basic principles go a long way toward explaining how and why <strong>air</strong> moves: Warm <strong>air</strong> rising <strong>creates</strong> a low pressure zone at the ground. <strong>Air</strong> from the surrounding area is sucked into the space left by the rising <strong>air</strong>. <strong>Air</strong> flows horizontally at top of the troposphere; horizontal flow is called ...",
+          "source_url": "https://courses.lumenlearning.com/earthscienceck12/chapter/air-movement/",
+          "source_title": "Air Movement | Earth Science",
+          "confidence": 0.7,
+          "timestamp": "2025-05-17T22:31:44.686154"
+        },
+        {
+          "text": "<strong>Air</strong> moves around the planet in a consistent pattern, called atmospheric circulation. Learn how convection and the spinning of the Earth <strong>create</strong> <strong>the</strong> prevailing winds.",
+          "source_url": "https://scied.ucar.edu/learning-zone/how-weather-works/global-air-atmospheric-circulation",
+          "source_title": "A Global Look at Moving Air: Atmospheric Circulation | Center for Science Education",
+          "confidence": 0.7,
+          "timestamp": "2025-05-17T22:31:44.686157"
+        },
+        {
+          "text": "At any time there are many <strong>weather</strong> systems weaving around the globe, however when averaged over many years a global pattern <strong>of</strong> <strong>air</strong> <strong>movement</strong> emerges.",
+          "source_url": "https://www.metoffice.gov.uk/weather/learn-about/weather/atmosphere/global-circulation-patterns",
+          "source_title": "Global circulation patterns - Met Office",
+          "confidence": 0.7,
+          "timestamp": "2025-05-17T22:31:44.686159"
+        },
+        {
+          "text": "This map of sea surface temperature illustrates how heat is distributed across the global ocean. Download image (jpg, 105 KB) \u00b7 One way that the world\u2019s ocean affects <strong>weather</strong> and climate is by playing an important role in keeping our planet warm. The majority of radiation from the Sun is ...",
+          "source_url": "https://oceanexplorer.noaa.gov/facts/climate.html",
+          "source_title": "How does the ocean affect climate and weather on land? : Ocean Exploration Facts: NOAA Ocean Exploration",
+          "confidence": 0.7,
+          "timestamp": "2025-05-17T22:31:44.686162"
+        },
+        {
+          "text": "We cannot provide a description for this page right now",
+          "source_url": "https://flexbooks.ck12.org/cbook/ck-12-middle-school-earth-science-flexbook-2.0/section/12.3/primary/lesson/effect-of-atmospheric-circulation-on-climate-ms-es/",
+          "source_title": "Effect of Atmospheric Circulation on Climate",
+          "confidence": 0.7,
+          "timestamp": "2025-05-17T22:31:44.686166"
+        },
+        {
+          "text": "This effect, known as the Coriolis Effect, makes atmospheric circulation dynamic. <strong>The constant meeting of moving hot and cold air masses produces three large, and distinct, convection cells north of the equator and three south of the equator</strong>. These cells move almost separately from one another ...",
+          "source_url": "https://www.greenfi.com/resources/how-atmospheric-circulation-affects-climate-change",
+          "source_title": "How Atmospheric Circulation Affects Climate Change | GreenFi",
+          "confidence": 0.7,
+          "timestamp": "2025-05-17T22:31:44.686169"
+        },
+        {
+          "text": "Answer (1 of 2): It\u2019s the other way round: <strong>weather</strong> patterns have an effect on <strong>air</strong> <strong>movement</strong>. We have areas of high and low <strong>air</strong> pressure. <strong>The</strong> <strong>air</strong> tends to move from high to low pressure. <strong>This</strong> <strong>movement</strong> is in turn affected by the Coriolis effect, caused by the rotation of the Earth.",
+          "source_url": "https://www.quora.com/How-does-air-movement-have-an-effect-on-weather-pattern",
+          "source_title": "How does air movement have an effect on weather pattern? - Quora",
+          "confidence": 0.7,
+          "timestamp": "2025-05-17T22:31:44.686172"
+        }
+      ],
+      "prevalence_score": 0.5
+    },
+    "opposing": {
+      "arguments": [
+        {
+          "text": "Atmospheric circulation transports heat over the surface of the Earth that affects the water <strong>cycle</strong>, including the formation of clouds and precipitation events. <strong>The</strong> <strong>movement</strong> <strong>of</strong> <strong>air</strong> masses brings us our daily <strong>weather</strong>, and long-term patterns in circulation determine regional climate and ecosystems.",
+          "source_url": "https://ugc.berkeley.edu/background-content/atmospheric-circulation/",
+          "source_title": "Atmospheric circulation - Understanding Global Change",
+          "confidence": 0.7,
+          "timestamp": "2025-05-17T22:31:44.686175"
+        },
+        {
+          "text": "MS-ESS2-5 Collect data to provide <strong>evidence</strong> for how the motions and complex interactions <strong>of</strong> <strong>air</strong> masses results in changes in <strong>weather</strong> conditions.",
+          "source_url": "https://manoa.hawaii.edu/exploringourfluidearth/physical/atmospheric-effects/wind-formation",
+          "source_title": "Wind Formation | manoa.hawaii.edu/ExploringOurFluidEarth",
+          "confidence": 0.7,
+          "timestamp": "2025-05-17T22:31:44.686177"
+        },
+        {
+          "text": "A few basic principles go a long way toward explaining how and why <strong>air</strong> moves: Warm <strong>air</strong> rising <strong>creates</strong> a low pressure zone at the ground. <strong>Air</strong> from the surrounding area is sucked into the space left by the rising <strong>air</strong>. <strong>Air</strong> flows horizontally at top of the troposphere; horizontal flow is called ...",
+          "source_url": "https://courses.lumenlearning.com/suny-geophysical/chapter/atmospheric-movements-and-flow/",
+          "source_title": "Atmospheric Movements and Flow | Physical Geography",
+          "confidence": 0.7,
+          "timestamp": "2025-05-17T22:31:44.686179"
+        },
+        {
+          "text": "<strong>Air</strong> moves around the planet in a consistent pattern, called atmospheric circulation. Learn how convection and the spinning of the Earth <strong>create</strong> <strong>the</strong> prevailing winds.",
+          "source_url": "https://scied.ucar.edu/learning-zone/how-weather-works/global-air-atmospheric-circulation",
+          "source_title": "A Global Look at Moving Air: Atmospheric Circulation | Center for Science Education",
+          "confidence": 0.7,
+          "timestamp": "2025-05-17T22:31:44.686182"
+        },
+        {
+          "text": "<strong>Air</strong> flow on a planet with no rotation and no water. Download Image Global Atmospheric Circulation is <strong>the</strong> <strong>movement</strong> <strong>of</strong> <strong>air</strong> around the planet. It explains how thermal energy and storm systems move over the Earth&#x27;s surface. Without the Earth\u2019s rotation, tilt relative to the sun, and surface water, glo",
+          "source_url": "https://www.noaa.gov/jetstream/global/global-atmospheric-circulations",
+          "source_title": "Global Atmospheric Circulations | National Oceanic and Atmospheric Administration",
+          "confidence": 0.7,
+          "timestamp": "2025-05-17T22:31:44.686184"
+        },
+        {
+          "text": "<strong>The</strong> <strong>movement</strong> <strong>of</strong> <strong>air</strong> across the earth determines <strong>the</strong> <strong>weather</strong> and climate of all regions. The sun\u2019s radiation heats up the land, sea and <strong>air</strong>. <strong>The</strong> land and water bodies also heat up <strong>the</strong> <strong>air</strong>, making it less dense. Here, hot <strong>air</strong> increases and <strong>creates</strong> low pressure over that area and cold <strong>air</strong> sinks ...",
+          "source_url": "https://byjus.com/biology/movement-of-air/",
+          "source_title": "What causes the movement of air?",
+          "confidence": 0.7,
+          "timestamp": "2025-05-17T22:31:44.686186"
+        },
+        {
+          "text": "Want to <strong>create</strong> or adapt books like this? Learn more about how Pressbooks supports open publishing practices \u00b7 Book Contents Navigation",
+          "source_url": "https://openwa.pressbooks.pub/sfccweatherandclimate/chapter/movement-in-the-atmosphere/",
+          "source_title": "Movement in the Atmosphere \u2013 SFCC Weather and Climate",
+          "confidence": 0.7,
+          "timestamp": "2025-05-17T22:31:44.686188"
+        },
+        {
+          "text": "The exact path is unknown because tornado <strong>movement</strong> is not very predictable. The intensity of tornadoes is measured on the Fujita Scale, which assigns a value based on wind speed and damage. Cyclones can be the most intense storms on Earth. A cyclone is a system of winds rotating counterclockwise in the Northern Hemisphere around a low pressure center. The swirling <strong>air</strong> ...",
+          "source_url": "https://courses.lumenlearning.com/suny-earthscience/chapter/weather-processes-and-systems/",
+          "source_title": "Weather Processes and Systems | Earth Science",
+          "confidence": 0.7,
+          "timestamp": "2025-05-17T22:31:44.686190"
+        },
+        {
+          "text": "A few basic principles go a long way toward explaining how and why <strong>air</strong> moves: Warm <strong>air</strong> rising <strong>creates</strong> a low pressure zone at the ground. <strong>Air</strong> from the surrounding area is sucked into the space left by the rising <strong>air</strong>. <strong>Air</strong> flows horizontally at top of the troposphere; horizontal flow is called ...",
+          "source_url": "https://courses.lumenlearning.com/earthscienceck12/chapter/air-movement/",
+          "source_title": "Air Movement | Earth Science",
+          "confidence": 0.7,
+          "timestamp": "2025-05-17T22:31:44.686192"
+        },
+        {
+          "text": "Imagine our <strong>weather</strong> if Earth were completely motionless, had a flat dry landscape and an untilted axis. This of course is not the case; if it were, <strong>the</strong> <strong>weather</strong> would be very different. The local <strong>weather</strong> that impacts our daily lives results from large global patterns in the atmosphere caused ...",
+          "source_url": "https://www.noaa.gov/education/resource-collections/weather-atmosphere/weather-systems-patterns",
+          "source_title": "Weather systems and patterns | National Oceanic and Atmospheric Administration",
+          "confidence": 0.7,
+          "timestamp": "2025-05-17T22:31:44.686195"
+        }
+      ],
+      "prevalence_score": 0.5
+    }
+  }
+}
