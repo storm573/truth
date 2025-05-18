@@ -1,6 +1,10 @@
-mcp-server>=1.9.0
+mcp-server<=0.1.4
 httpx
 python-dotenv
 fastapi
 uvicorn
 pathlib
+yt-dlp
+pydub
+openai
+ffmpeg-python

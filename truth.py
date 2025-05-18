@@ -1,3 +1,23 @@
+# ===============================================================
+# Truth-Seeking MCP Server
+# ===============================================================
+#
+# This MCP server offers the following tools:
+#
+# 1. analyze_claim - Analyzes a claim by finding supporting and opposing perspectives
+#    from web searches, presenting balanced viewpoints with confidence scoring.
+#
+# 2. extract_claim - Extracts factual, predictive, or normative claims from text
+#    using LLM processing, identifying substantial claims with confidence scores.
+#
+# 3. get_perspective_history - Retrieves historical perspectives for similar claims
+#    from memory storage for consistent analysis over time.
+#
+# 4. transcribe_media - Transcribes speech from YouTube videos or podcasts into text
+#    using OpenAI's Whisper API, supporting multiple languages.
+#
+# ===============================================================
+
 from mcp.server.fastmcp import FastMCP, Context
 from contextlib import asynccontextmanager
 from collections.abc import AsyncIterator
@@ -11,6 +31,14 @@ import re
 import logging
 import datetime
 import pathlib
+import tempfile
+import subprocess
+import shutil
+
+# For audio transcription
+import yt_dlp
+from pydub import AudioSegment
+import openai
 
 # Set up logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
@@ -30,6 +58,7 @@ class TruthSeekingContext:
     """Context for the Truth-Seeking MCP server."""
     brave_search_api_key: str
     perplexity_api_key: Optional[str] = None
+    openai_api_key: Optional[str] = None
     mem0_client: Optional[Any] = None  # Will be initialized if memory integration is enabled
 
 @asynccontextmanager
@@ -49,6 +78,12 @@ async def truth_seeking_lifespan(server: FastMCP) -> AsyncIterator[TruthSeekingC
         raise ValueError("BRAVE_SEARCH_API_KEY environment variable is required")
     
     # Perplexity API key is optional but recommended for confidence scoring
+    
+    # OpenAI API key for Whisper API
+    openai_api_key = os.getenv("openai_api_key")
+    if not openai_api_key:
+        logging.warning("OpenAI API key not found, transcription functionality will be unavailable")
+    
     perplexity_api_key = os.getenv("PERPLEXITY_API_KEY")
     
     # Initialize mem0 client if enabled
@@ -61,6 +96,7 @@ async def truth_seeking_lifespan(server: FastMCP) -> AsyncIterator[TruthSeekingC
         yield TruthSeekingContext(
             brave_search_api_key=brave_search_api_key,
             perplexity_api_key=perplexity_api_key,
+            openai_api_key=openai_api_key,
             mem0_client=mem0_client
         )
     finally:
@@ -643,6 +679,187 @@ async def get_perspective_history(ctx: Context, query: str, limit: int = 3) -> s
         return json.dumps(flattened_memories, indent=2)
     except Exception as e:
         return f"Error retrieving historical perspectives: {str(e)}"
+
+async def _download_media(url: str, output_dir: str) -> str:
+    """Download audio from a YouTube video or podcast URL.
+    
+    Args:
+        url: URL to YouTube video or podcast
+        output_dir: Directory to save downloaded audio
+        
+    Returns:
+        Path to downloaded audio file
+    """
+    logging.info(f"Downloading media from: {url}")
+    
+    ydl_opts = {
+        'format': 'bestaudio/best',
+        'postprocessors': [{
+            'key': 'FFmpegExtractAudio',
+            'preferredcodec': 'mp3',
+            'preferredquality': '192',
+        }],
+        'outtmpl': os.path.join(output_dir, '%(title)s.%(ext)s'),
+        'quiet': True,
+        'no_warnings': True
+    }
+    
+    try:
+        with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+            info = ydl.extract_info(url, download=True)
+            filename = ydl.prepare_filename(info).replace('.webm', '.mp3').replace('.m4a', '.mp3')
+            return filename
+    except Exception as e:
+        logging.error(f"Error downloading media: {str(e)}")
+        raise
+
+async def _process_audio_for_transcription(audio_path: str) -> str:
+    """Process audio file for transcription, ensuring it meets Whisper API requirements.
+    
+    Args:
+        audio_path: Path to the audio file
+        
+    Returns:
+        Path to the processed audio file ready for transcription
+    """
+    try:
+        # Load the audio file
+        audio = AudioSegment.from_file(audio_path)
+        
+        # Whisper has a 25MB limit, so we may need to reduce quality or split
+        processed_path = audio_path.replace('.mp3', '_processed.mp3')
+        
+        # If file is too large, reduce quality
+        file_size = os.path.getsize(audio_path) / (1024 * 1024)  # Size in MB
+        
+        if file_size > 24:  # Leave buffer under 25MB
+            # Reduce bitrate to lower file size
+            audio.export(processed_path, format="mp3", bitrate="64k")
+        else:
+            # Use original file
+            processed_path = audio_path
+        
+        return processed_path
+    except Exception as e:
+        logging.error(f"Error processing audio: {str(e)}")
+        raise
+
+async def _transcribe_with_whisper(ctx: Context, audio_path: str, language: str = "en") -> dict:
+    """Transcribe audio using OpenAI Whisper API.
+    
+    Args:
+        ctx: The MCP server context
+        audio_path: Path to the audio file
+        language: Language code for transcription
+        
+    Returns:
+        Dictionary containing the transcription and metadata
+    """
+    api_key = ctx.request_context.lifespan_context.openai_api_key
+    if not api_key:
+        raise ValueError("OpenAI API key not available for transcription")
+    
+    # Initialize OpenAI client with new API format
+    client = openai.OpenAI(api_key=api_key)
+    logging.info(f"Transcribing audio file: {audio_path}")
+    
+    try:
+        with open(audio_path, "rb") as audio_file:
+            # Use new client.audio.transcriptions.create format
+            response = client.audio.transcriptions.create(
+                model="whisper-1",
+                file=audio_file,
+                language=language if language else None
+            )
+        
+        return response
+    except Exception as e:
+        logging.error(f"Error transcribing audio: {str(e)}")
+        raise
+
+@mcp.tool()
+async def transcribe_media(ctx: Context, url: str, language: str = "en") -> str:
+    """Transcribe speech from YouTube videos or podcasts into text.
+    
+    Args:
+        ctx: The MCP server provided context
+        url: URL to YouTube video or podcast episode
+        language: Language code for transcription (default: 'en' for English)
+        
+    Returns:
+        JSON formatted transcription with metadata
+    """
+    # Check for ffmpeg installation first
+    try:
+        # Try to run ffmpeg to check if it's installed
+        subprocess.run(["ffmpeg", "-version"], capture_output=True, check=True)
+    except (subprocess.SubprocessError, FileNotFoundError):
+        error_message = (
+            "FFmpeg is not installed or not in PATH. This tool requires ffmpeg for audio processing.\n"
+            "Please install ffmpeg:\n"
+            "- On macOS: brew install ffmpeg\n"
+            "- On Ubuntu/Debian: sudo apt-get install ffmpeg\n"
+            "- On Windows: Download from https://ffmpeg.org/download.html\n"
+            "\nAfter installing, restart the server and try again."
+        )
+        return json.dumps({
+            "error": error_message,
+            "transcription": ""
+        }, indent=2)
+    
+    try:
+        if not ctx.request_context.lifespan_context.openai_api_key:
+            return json.dumps({
+                "error": "OpenAI API key not available for transcription",
+                "transcription": ""
+            }, indent=2)
+        
+        # Create a temporary directory for downloads
+        with tempfile.TemporaryDirectory() as temp_dir:
+            # Step 1: Download the media from URL
+            logging.info(f"Starting transcription process for: {url}")
+            audio_path = await _download_media(url, temp_dir)
+            
+            # Step 2: Process the audio for transcription
+            processed_audio = await _process_audio_for_transcription(audio_path)
+            
+            # Step 3: Transcribe the audio
+            transcription_result = await _transcribe_with_whisper(ctx, processed_audio, language)
+            
+            # Extract title from filename
+            filename = os.path.basename(audio_path)
+            title = os.path.splitext(filename)[0]
+            
+            # Step 4: Save the transcription to a file
+            timestamp = _get_current_timestamp()
+            output_filename = f"{timestamp}_{title[:30].replace(' ', '_')}_transcription.json"
+            output_path = os.path.join("responses", output_filename)
+            
+            # Prepare response - new OpenAI API returns an object with a text property
+            result = {
+                "url": url,
+                "title": title,
+                "language": language,
+                "timestamp": timestamp,
+                "transcription": transcription_result.text if hasattr(transcription_result, 'text') else str(transcription_result)
+            }
+            
+            # Save to file
+            os.makedirs("responses", exist_ok=True)
+            with open(output_path, "w", encoding="utf-8") as f:
+                json.dump(result, f, indent=2)
+            
+            logging.info(f"Transcription complete and saved to: {output_path}")
+            
+            return json.dumps(result, indent=2)
+    
+    except Exception as e:
+        error_message = str(e)
+        logging.error(f"Error in transcription process: {error_message}")
+        return json.dumps({
+            "error": error_message,
+            "transcription": ""
+        }, indent=2)
 
 async def main():
     transport = os.getenv("TRANSPORT", "sse")
