@@ -1,0 +1,57 @@
+{
+  "version": "1.4.0",
+  "timestamp": "2025-05-18T00:43:23.518759",
+  "message": "Extracted 10 claim(s) from the provided text.",
+  "claims": [
+    {
+      "claim": "The spillover effect is just a reflection of the fact that when one sibling does well, then the younger siblings tend to do well as well.",
+      "claim_type": "factual",
+      "confidence": 0.7
+    },
+    {
+      "claim": "But there's a really interesting study that was conducted just a few years ago that is sort of what we call a semi-natural experiment.",
+      "claim_type": "factual",
+      "confidence": 0.7
+    },
+    {
+      "claim": "This researcher at Yale found that when children are kind of on the old side for their grade, depending on where their birthday is, we know that those kids tend to do better academically than kids who are very young for their grade.",
+      "claim_type": "normative",
+      "confidence": 0.7
+    },
+    {
+      "claim": "So she looked at the younger siblings of those kids who happened to be doing better in school because of this developmental advantage.",
+      "claim_type": "normative",
+      "confidence": 0.7
+    },
+    {
+      "claim": "And what she found was for the younger siblings of those kids, it didn't matter whether those kids, these younger siblings, were old for their grade, young for their grade, they did better than expected.",
+      "claim_type": "normative",
+      "confidence": 0.7
+    },
+    {
+      "claim": "And so you really see here, that is the sibling effect.",
+      "claim_type": "factual",
+      "confidence": 0.7
+    },
+    {
+      "claim": "Elizabeth was put into a grade that was two years below her age because they were so worried about her English skills that they wanted to give her a chance.",
+      "claim_type": "factual",
+      "confidence": 0.7
+    },
+    {
+      "claim": "Not only did they give her a chance, but I think they really gave her a boost because she was going to catch up with the English pretty quickly.",
+      "claim_type": "predictive",
+      "confidence": 0.7
+    },
+    {
+      "claim": "And that was a place where she excelled.",
+      "claim_type": "factual",
+      "confidence": 0.7
+    },
+    {
+      "claim": "And then because she did excel in school, she was able to help her siblings excel.",
+      "claim_type": "factual",
+      "confidence": 0.7
+    }
+  ]
+}

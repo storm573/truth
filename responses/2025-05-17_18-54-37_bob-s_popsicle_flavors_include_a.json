@@ -1,0 +1,341 @@
+{
+  "version": "1.4.0",
+  "claim": "Bob's popsicle flavors include a lake pop that tastes like ice and algae.",
+  "claim_type": "factual",
+  "timestamp": "2025-05-18T01:54:37.587067",
+  "llm_confidence_analysis": false,
+  "perspectives": {
+    "supporting": {
+      "arguments": [
+        {
+          "text": "During the past couple of years, artisan <strong>ice</strong> <strong>pops</strong>, what you and I know generically as <strong>popsicles</strong>, have outpaced those hipster favorites, cupcakes, in the r...",
+          "source_url": "https://www.collectorsweekly.com/articles/the-cold-hard-truth-about-popsicles/",
+          "source_title": "The Cold, Hard Truth About Popsicles | Collectors Weekly",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T01:54:37.147776",
+          "llm_analyzed": false
+        },
+        {
+          "text": "An <strong>ice</strong> <strong>pop</strong> is a liquid/cream-based frozen dessert on a stick. Unlike <strong>ice</strong> cream or sorbet, which are whipped while freezing to prevent <strong>ice</strong> crystal formation, an <strong>ice</strong> <strong>pop</strong> is frozen while at rest, becoming a solid block of <strong>ice</strong> with an icy texture. It is a fusion of <strong>flavored</strong> liquid, <strong>like</strong> juice or ...",
+          "source_url": "https://en.wikipedia.org/wiki/Ice_pop",
+          "source_title": "Ice pop - Wikipedia",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T01:54:37.147788",
+          "llm_analyzed": false
+        },
+        {
+          "text": "<strong>Popsicle</strong> is a Good Humor-Breyers brand of <strong>ice</strong> <strong>pop</strong> consisting of <strong>flavored</strong>, colored <strong>ice</strong> on a stick. In 1905 in Oakland, California, 11-year-old Francis William &quot;Frank&quot; Epperson was mixing a powdered <strong>flavoring</strong> for soft drinks with water. He accidentally left it on the back porch overnight, with ...",
+          "source_url": "https://en.wikipedia.org/wiki/Popsicle_(brand)",
+          "source_title": "Popsicle (brand) - Wikipedia",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T01:54:37.147792",
+          "llm_analyzed": false
+        },
+        {
+          "text": "<strong>There is no scientific evidence</strong> and I know it doesn&#x27;t work for everyone, but it works for me! Cures my heartburn! I wish Walmart carried more than the pops. I want a gallon jug! ... Bobs Pickle Pops are life savers. Mom needs them for leg cramps &amp; her local stores have been sold out.",
+          "source_url": "https://www.texasfood.com/Bob-s-Pickle-Pops.html",
+          "source_title": "Bob's Pickle Pops > TexasFood.com",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T01:54:37.147795",
+          "llm_analyzed": false
+        },
+        {
+          "text": "What <strong>flavor</strong> is a red white &amp; blue <strong>Popsicle</strong> \u00b7 I actually have some of these in my freezer I&#x27;d bought for my Independence day celebration. So, ever one to help out fellow hubbers, here&#x27;<strong>s</strong> the answer for the brand I have on hand. Firecracker brand <strong>Popsicle</strong> -- Red - Cherry White - White Lemon Blue ...",
+          "source_url": "https://hubpages.com/food/forum/295573/what-flavor-is-a-red-white--blue-popsicle",
+          "source_title": "What flavor is a red white & blue Popsicle?",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T01:54:37.147798",
+          "llm_analyzed": false
+        },
+        {
+          "text": "Cool off with these classic <strong>Popsicle</strong> <strong>flavors</strong>. Our frozen treats are perfect for your freezer or On the Go.",
+          "source_url": "https://www.popsicle.com/us/en/products/classics.html",
+          "source_title": "Popsicle Classic Ice Pops | Popsicle\u00ae",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T01:54:37.147801",
+          "llm_analyzed": false
+        },
+        {
+          "text": "The SpongeBob SquarePants <strong>Popsicle</strong>, also known as the &quot;Spongesicle,&quot; is a water-based frozen snack sold by the <strong>ice</strong> <strong>pop</strong> company <strong>Popsicle</strong> <strong>and</strong> is made to look <strong>like</strong> SpongeBob. The <strong>Popsicle</strong> first debuted in 2002. Since then, there have been four packaging designs. In 2023, <strong>Popsicle</strong> replaced the <strong>ice</strong>...",
+          "source_url": "https://spongebob.fandom.com/wiki/SpongeBob_SquarePants_Popsicle",
+          "source_title": "SpongeBob SquarePants Popsicle | Encyclopedia SpongeBobia | Fandom",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T01:54:37.147803",
+          "llm_analyzed": false
+        },
+        {
+          "text": "With 100% of the flavor and zero compromise, a <strong>Fudgsicle pop</strong> is only 40 calories with no added sugar.",
+          "source_url": "https://www.popsicle.com/us/en/home.html",
+          "source_title": "Popsicle\u00ae Ice Pops | It\u2019s Always Summer with Popsicle\u00ae",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T01:54:37.147808",
+          "llm_analyzed": false
+        },
+        {
+          "text": "Last week, when an <strong>ice</strong>-cream car was circling in my neighborhood, I stopped it and bought a Sponge <strong>Bob</strong> <strong>Popsicle</strong>.",
+          "source_url": "https://medium.com/@lennielu/the-little-thing-about-sponge-bob-popsicle-bb85446af06c",
+          "source_title": "The Little Thing About Sponge Bob Popsicle | by Lennie Lu | Medium",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T01:54:37.147811",
+          "llm_analyzed": false
+        },
+        {
+          "text": "How Otter <strong>Pops</strong>, Fla-vor-<strong>ice</strong>, <strong>and</strong> other freeze <strong>pop</strong> brands came to dominate your childhood",
+          "source_url": "https://www.eater.com/2018/8/21/17660626/freeze-pops-ice-otter-pops",
+          "source_title": "A Brief History of Freeze Pops - Eater",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T01:54:37.147814",
+          "llm_analyzed": false
+        },
+        {
+          "text": "Discover the SpongeBob <strong>Popsicle</strong>\u00ae. Shaped <strong>like</strong> SpongeBob SquarePants\u2122, it will become your kids&#x27; favorite frozen treat!",
+          "source_url": "https://www.popsicle.com/us/en/products/char-pops/popsicle-spongebob-squarepants-bar.html",
+          "source_title": "Popsicle\u00ae SpongeBob SquarePants\u2122 Frozen Confection Bar",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T01:54:37.147817",
+          "llm_analyzed": false
+        },
+        {
+          "text": "Of course you loved <strong>ice</strong> <strong>pops</strong> as a kid\u2014they were invented by one!",
+          "source_url": "https://www.mentalfloss.com/article/81795/9-chill-facts-about-popsicles-and-ice-pops",
+          "source_title": "9 Chill Facts About Popsicles and Ice Pops",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T01:54:37.147819",
+          "llm_analyzed": false
+        },
+        {
+          "text": "The beloved <strong>ice</strong> <strong>pops</strong> were born of a young boy&#x27;<strong>s</strong> tinkering with sugary soda powder and water on a cold night. But the end of this tale for Frank Epperson was not as sweet as his treat.",
+          "source_url": "https://www.npr.org/sections/thesalt/2015/07/22/425294957/how-an-11-year-old-boy-invented-the-popsicle",
+          "source_title": "How An 11-Year-Old Boy Invented The Popsicle : The Salt : NPR",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T01:54:37.147822",
+          "llm_analyzed": false
+        },
+        {
+          "text": "<strong>Popsicle</strong> SpongeBob SquarePants\u2122 Frozen Confection Bars are your favorite <strong>ice</strong> cream truck treat\u2014now ready to eat anytime at home!",
+          "source_url": "https://www.popsicle.com/us/en/p/popsicle-spongebob-pops.html/00077567003638",
+          "source_title": "Popsicle\u00ae SpongeBob SquarePants\u2122 Frozen Confection Bars",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T01:54:37.147824",
+          "llm_analyzed": false
+        },
+        {
+          "text": "<strong>Popsicle</strong>\u00ae is made for kids and was invented by one! Learn the unique 100-plus year history of <strong>Popsicle</strong>\u00ae <strong>and</strong> how a kid made one of the world\u2019<strong>s</strong> top desserts.",
+          "source_url": "https://www.popsicle.com/us/en/our-story.html",
+          "source_title": "Popsicle\u00ae | Frank Epperson and the Popsicle\u00ae Story",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T01:54:37.147827",
+          "llm_analyzed": false
+        },
+        {
+          "text": "Get answers to your <strong>Popsicle</strong>\u00ae questions! Our FAQ page has all the info you need about our <strong>pops</strong> &amp; frozen treats.",
+          "source_url": "https://www.popsicle.com/us/en/faq.html",
+          "source_title": "Popsicle\u00ae | Frequently Asked Questions",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T01:54:37.147830",
+          "llm_analyzed": false
+        },
+        {
+          "text": "Answer (1 of 13): I <strong>like</strong> the El cheapo ones that you buy at Walmartyou get at Walmart. They&#x27;re about two bucks for 18 twin pots. My favorites are orange and lime, I don&#x27;t care for the Cherry. It&#x27;<strong>s</strong> probably my least favorite. And grape would be my second least favorite. Then banana and the blue ki...",
+          "source_url": "https://www.quora.com/What-is-your-favorite-flavored-popsicle",
+          "source_title": "What is your favorite flavored popsicle? - Quora",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T01:54:37.147832",
+          "llm_analyzed": false
+        },
+        {
+          "text": "Catch up on stories from the past week (and beyond) at the Slashdot story archive \u00b7 The Fine Print: The following comments are owned by whoever posted them. We are not responsible for them in any way",
+          "source_url": "https://slashdot.org/poll/1066/favorite-popsicle-flavor",
+          "source_title": "Slashdot Poll | Favorite Popsicle Flavor? ...",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T01:54:37.147835",
+          "llm_analyzed": false
+        },
+        {
+          "text": "How the makers of Bomb <strong>Pops</strong> <strong>and</strong> Firecrackers found themselves in a rocket <strong>pop</strong> war over the red, white, and blue summertime <strong>popsicle</strong>.",
+          "source_url": "https://10best.usatoday.com/interests/food-culture/bomb-pop-firecracker-popsicle-red-white-blue/",
+          "source_title": "The fascinating story of patriotic Bomb Pop and Firecracker popsicles",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T01:54:37.147837",
+          "llm_analyzed": false
+        },
+        {
+          "text": "It&#x27;<strong>s</strong> always summer with <strong>Popsicle</strong>\u00ae. For your freezer and On the Go. Get product info and reviews about our <strong>ice</strong> <strong>pops</strong>, frozen treats and snacks.",
+          "source_url": "https://www.popsicle.com/us/en/products.html",
+          "source_title": "Popsicle\u00ae Ice Pops and Frozen Treats | Popsicle\u00ae",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T01:54:37.147840",
+          "llm_analyzed": false
+        }
+      ],
+      "total_results_found": 200,
+      "prevalence_score": 0.5
+    },
+    "opposing": {
+      "arguments": [
+        {
+          "text": "During the past couple of years, artisan <strong>ice</strong> <strong>pops</strong>, what you and I know generically as <strong>popsicles</strong>, have outpaced those hipster favorites, cupcakes, in the r...",
+          "source_url": "https://www.collectorsweekly.com/articles/the-cold-hard-truth-about-popsicles/",
+          "source_title": "The Cold, Hard Truth About Popsicles | Collectors Weekly",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T01:54:37.368016",
+          "llm_analyzed": false
+        },
+        {
+          "text": "An <strong>ice</strong> <strong>pop</strong> is a liquid/cream-based frozen dessert on a stick. Unlike <strong>ice</strong> cream or sorbet, which are whipped while freezing to prevent <strong>ice</strong> crystal formation, an <strong>ice</strong> <strong>pop</strong> is frozen while at rest, becoming a solid block of <strong>ice</strong> with an icy texture. It is a fusion of <strong>flavored</strong> liquid, <strong>like</strong> juice or ...",
+          "source_url": "https://en.wikipedia.org/wiki/Ice_pop",
+          "source_title": "Ice pop - Wikipedia",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T01:54:37.368027",
+          "llm_analyzed": false
+        },
+        {
+          "text": "<strong>Popsicle</strong> is a Good Humor-Breyers brand of <strong>ice</strong> <strong>pop</strong> consisting of <strong>flavored</strong>, colored <strong>ice</strong> on a stick. In 1905 in Oakland, California, 11-year-old Francis William &quot;Frank&quot; Epperson was mixing a powdered <strong>flavoring</strong> for soft drinks with water. He accidentally left it on the back porch overnight, with ...",
+          "source_url": "https://en.wikipedia.org/wiki/Popsicle_(brand)",
+          "source_title": "Popsicle (brand) - Wikipedia",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T01:54:37.368031",
+          "llm_analyzed": false
+        },
+        {
+          "text": "Welcome to the home of <strong>Popsicle</strong>\u00ae <strong>Ice</strong> <strong>Pops</strong>, the original frozen treat since 1905. Get product info and explore all the <strong>flavors</strong> <strong>and</strong> varieties of our icy treats!",
+          "source_url": "https://www.popsicle.com/us/en",
+          "source_title": "Popsicle\u00ae Ice Pops | It\u2019s Always Summer with Popsicle\u00ae",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T01:54:37.368035",
+          "llm_analyzed": false
+        },
+        {
+          "text": "The beloved <strong>ice</strong> <strong>pops</strong> were born of a young boy&#x27;<strong>s</strong> tinkering with sugary soda powder and water on a cold night. But the end of this tale for Frank Epperson was not as sweet as his treat.",
+          "source_url": "https://www.npr.org/sections/thesalt/2015/07/22/425294957/how-an-11-year-old-boy-invented-the-popsicle",
+          "source_title": "How An 11-Year-Old Boy Invented The Popsicle : The Salt : NPR",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T01:54:37.368039",
+          "llm_analyzed": false
+        },
+        {
+          "text": "What <strong>flavor</strong> is a red white &amp; blue <strong>Popsicle</strong> \u00b7 I actually have some of these in my freezer I&#x27;d bought for my Independence day celebration. So, ever one to help out fellow hubbers, here&#x27;<strong>s</strong> the answer for the brand I have on hand. Firecracker brand <strong>Popsicle</strong> -- Red - Cherry White - White Lemon Blue ...",
+          "source_url": "https://hubpages.com/food/forum/295573/what-flavor-is-a-red-white--blue-popsicle",
+          "source_title": "What flavor is a red white & blue Popsicle?",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T01:54:37.368042",
+          "llm_analyzed": false
+        },
+        {
+          "text": "Cool off with these classic <strong>Popsicle</strong> <strong>flavors</strong>. Our frozen treats are perfect for your freezer or On the Go.",
+          "source_url": "https://www.popsicle.com/us/en/products/classics.html",
+          "source_title": "Popsicle Classic Ice Pops | Popsicle\u00ae",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T01:54:37.368046",
+          "llm_analyzed": false
+        },
+        {
+          "text": "<strong>Popsicle</strong>\u00ae is made for kids and was invented by one! Learn the unique 100-plus year history of <strong>Popsicle</strong>\u00ae <strong>and</strong> how a kid made one of the world\u2019<strong>s</strong> top desserts.",
+          "source_url": "https://www.popsicle.com/us/en/our-story.html",
+          "source_title": "Popsicle\u00ae | Frank Epperson and the Popsicle\u00ae Story",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T01:54:37.368049",
+          "llm_analyzed": false
+        },
+        {
+          "text": "How Otter <strong>Pops</strong>, Fla-vor-<strong>ice</strong>, <strong>and</strong> other freeze <strong>pop</strong> brands came to dominate your childhood",
+          "source_url": "https://www.eater.com/2018/8/21/17660626/freeze-pops-ice-otter-pops",
+          "source_title": "A Brief History of Freeze Pops - Eater",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T01:54:37.368053",
+          "llm_analyzed": false
+        },
+        {
+          "text": "Get answers to your <strong>Popsicle</strong>\u00ae questions! Our FAQ page has all the info you need about our <strong>pops</strong> &amp; frozen treats.",
+          "source_url": "https://www.popsicle.com/us/en/faq.html",
+          "source_title": "Popsicle\u00ae | Frequently Asked Questions",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T01:54:37.368056",
+          "llm_analyzed": false
+        },
+        {
+          "text": "Answer (1 of 13): I <strong>like</strong> the El cheapo ones that you buy at Walmartyou get at Walmart. They&#x27;re about two bucks for 18 twin pots. My favorites are orange and lime, I don&#x27;t care for the Cherry. It&#x27;<strong>s</strong> probably my least favorite. And grape would be my second least favorite. Then banana and the blue ki...",
+          "source_url": "https://www.quora.com/What-is-your-favorite-flavored-popsicle",
+          "source_title": "What is your favorite flavored popsicle? - Quora",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T01:54:37.368059",
+          "llm_analyzed": false
+        },
+        {
+          "text": "The SpongeBob SquarePants <strong>Popsicle</strong>, also known as the &quot;Spongesicle,&quot; is a water-based frozen snack sold by the <strong>ice</strong> <strong>pop</strong> company <strong>Popsicle</strong> <strong>and</strong> is made to look <strong>like</strong> SpongeBob. The <strong>Popsicle</strong> first debuted in 2002. Since then, there have been four packaging designs. In 2023, <strong>Popsicle</strong> replaced the <strong>ice</strong>...",
+          "source_url": "https://spongebob.fandom.com/wiki/SpongeBob_SquarePants_Popsicle",
+          "source_title": "SpongeBob SquarePants Popsicle | Encyclopedia SpongeBobia | Fandom",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T01:54:37.368063",
+          "llm_analyzed": false
+        },
+        {
+          "text": "Catch up on stories from the past week (and beyond) at the Slashdot story archive \u00b7 The Fine Print: The following comments are owned by whoever posted them. We are not responsible for them in any way",
+          "source_url": "https://slashdot.org/poll/1066/favorite-popsicle-flavor",
+          "source_title": "Slashdot Poll | Favorite Popsicle Flavor? ...",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T01:54:37.368066",
+          "llm_analyzed": false
+        },
+        {
+          "text": "Stop wasting calories on terrible <strong>popsicles</strong>. This ranking is all you need to get you through the summer.",
+          "source_url": "https://uproxx.com/life/best-popsicle-flavors/",
+          "source_title": "Ring In Summer With A Definitive Popsicle Power Ranking",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T01:54:37.368069",
+          "llm_analyzed": false
+        },
+        {
+          "text": "Remember Scribblers? We do, and they kinda sucked.",
+          "source_url": "https://www.thrillist.com/eat/nation/the-best-ice-cream-truck-popsicles",
+          "source_title": "The Best Ice Cream Truck Popsicles - Thrillist",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T01:54:37.368072",
+          "llm_analyzed": false
+        },
+        {
+          "text": "Spring 2005, Vol. 37, No. 1 By Jefferson M. Moak Enlarge The <strong>Popsicle</strong> Corporation and Good Humor Corporation faced off in the courts over disagreements about market share. (Records of District Courts of the United States, RG 21) View in National Archives Catalog They are as American as apple ...",
+          "source_url": "https://www.archives.gov/publications/prologue/2005/spring/popsicle",
+          "source_title": "The Frozen Sucker War: Good Humor v. Popsicle | National Archives",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T01:54:37.368075",
+          "llm_analyzed": false
+        },
+        {
+          "text": "Last week, when an <strong>ice</strong>-cream car was circling in my neighborhood, I stopped it and bought a Sponge <strong>Bob</strong> <strong>Popsicle</strong>.",
+          "source_url": "https://medium.com/@lennielu/the-little-thing-about-sponge-bob-popsicle-bb85446af06c",
+          "source_title": "The Little Thing About Sponge Bob Popsicle | by Lennie Lu | Medium",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T01:54:37.368078",
+          "llm_analyzed": false
+        },
+        {
+          "text": "How the makers of Bomb <strong>Pops</strong> <strong>and</strong> Firecrackers found themselves in a rocket <strong>pop</strong> war over the red, white, and blue summertime <strong>popsicle</strong>.",
+          "source_url": "https://10best.usatoday.com/interests/food-culture/bomb-pop-firecracker-popsicle-red-white-blue/",
+          "source_title": "The fascinating story of patriotic Bomb Pop and Firecracker popsicles",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T01:54:37.368081",
+          "llm_analyzed": false
+        },
+        {
+          "text": "<strong>Popsicle</strong> SpongeBob SquarePants\u2122 Frozen Confection Bars are your favorite <strong>ice</strong> cream truck treat\u2014now ready to eat anytime at home!",
+          "source_url": "https://www.popsicle.com/us/en/p/popsicle-spongebob-pops.html/00077567003638",
+          "source_title": "Popsicle\u00ae SpongeBob SquarePants\u2122 Frozen Confection Bars",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T01:54:37.368084",
+          "llm_analyzed": false
+        },
+        {
+          "text": "It&#x27;<strong>s</strong> always summer with <strong>Popsicle</strong>\u00ae. For your freezer and On the Go. Get product info and reviews about our <strong>ice</strong> <strong>pops</strong>, frozen treats and snacks.",
+          "source_url": "https://www.popsicle.com/us/en/products.html",
+          "source_title": "Popsicle\u00ae Ice Pops and Frozen Treats | Popsicle\u00ae",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T01:54:37.368088",
+          "llm_analyzed": false
+        }
+      ],
+      "total_results_found": 200,
+      "prevalence_score": 0.5
+    }
+  }
+}

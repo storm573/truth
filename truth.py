@@ -487,7 +487,7 @@ async def _save_response_to_file(claim: str, result: Dict[str, Any]) -> None:
 
 @mcp.tool()
 async def extract_claim(ctx: Context, text: str, max_claims: int = 5) -> str:
-    """Extract factual, predictive, or normative claims from a large text input.
+    """Extract factual, predictive, or normative claims from a large text input using LLM.
     
     Args:
         ctx: The MCP server provided context
@@ -498,80 +498,115 @@ async def extract_claim(ctx: Context, text: str, max_claims: int = 5) -> str:
         JSON formatted list of extracted claims with their types
     """
     try:
-        # Prepare the extracted claims list
-        extracted_claims = []
+        # Set up the prompt for Perplexity API
+        system_prompt = f"""
+        You are a specialized claim extraction system designed to identify substantive claims from text.
+
+        A substantive claim is a meaningful assertion that:
+        1. Makes a factual statement about the world that can be verified or falsified
+        2. Predicts future outcomes or trends
+        3. Expresses a normative position about what should or ought to be done
+
+        DO NOT identify as claims:
+        - Simple statements of personal preference
+        - Basic observations about immediate context ("It's Tuesday")
+        - Greetings or conversational filler ("It is nice to see you")
+        - Questions
+        - Purely narrative or descriptive statements
+
+        For each identified claim:
+        1. Extract the exact text of the claim
+        2. Classify it as:
+           - "factual" (verifiable statements about reality)
+           - "predictive" (forecasts about future events)
+           - "normative" (value judgments or prescriptive statements)
+        3. Provide a confidence score (0.1-1.0) indicating how clearly it represents a substantive claim
+
+        Limit your response to the top {max_claims} most substantive claims.
+        Response format: JSON array of claims, each with "claim", "claim_type", and "confidence" fields.
+        If no substantive claims are found, return an empty array.
+        """
         
-        # Split text into sentences
-        sentences = re.split(r'(?<=[.!?])\s+', text)
+        user_prompt = f"Extract substantive claims from the following text:\n\n{text}"
         
-        # List of claim signal phrases and patterns
-        claim_signals = [
-            "is", "are", "was", "were", "will", "shall", "should", "must", "can", "could",
-            "may", "might", "would", "ought to", "need to", "have to", "has to",
-            "always", "never", "every", "all", "none", "most", "many", "few", "some",
-            "because", "therefore", "thus", "hence", "clearly", "obviously", "evidently",
-            "research shows", "studies indicate", "according to", "experts say", "evidence suggests",
-            "I believe", "I think", "in my opinion", "I argue", "it is argued", "we know"
-        ]
-        
-        # Regular expressions for claims
-        factual_pattern = r'\b(is|are|was|were|has been|have been|exists|occurred|happened|resulted|caused|led to)\b'
-        predictive_pattern = r'\b(will|going to|shall|would|could|might|may|expect|predict|forecast|project|anticipate|foresee)\b'
-        normative_pattern = r'\b(should|must|ought to|need to|have to|has to|better|best|worse|worst|good|bad|right|wrong|important|necessary|essential|critical|vital)\b'
-        
-        # Process each sentence to identify potential claims
-        for sentence in sentences:
-            # Skip very short sentences
-            if len(sentence.split()) < 4:
-                continue
-                
-            # Skip questions
-            if sentence.endswith("?") or sentence.lower().startswith("who ") or sentence.lower().startswith("what ") or \
-               sentence.lower().startswith("when ") or sentence.lower().startswith("where ") or \
-               sentence.lower().startswith("why ") or sentence.lower().startswith("how "):
-                continue
-            
-            # Check if sentence contains claim signals
-            has_signal = any(signal.lower() in sentence.lower() for signal in claim_signals)
-            
-            # Identify claim type
-            claim_type = None
-            if re.search(normative_pattern, sentence.lower()):
-                claim_type = "normative"
-            elif re.search(predictive_pattern, sentence.lower()):
-                claim_type = "predictive"
-            elif re.search(factual_pattern, sentence.lower()):
-                claim_type = "factual"
-            
-            # If it has a signal and we identified the type, add it to extracted claims
-            if has_signal and claim_type and len(sentence.strip()) > 0:
-                # Clean up sentence (remove extra whitespace)
-                clean_sentence = re.sub(r'\s+', ' ', sentence).strip()
-                
-                # Add to extracted claims
-                extracted_claims.append({
-                    "claim": clean_sentence,
-                    "claim_type": claim_type,
-                    "confidence": 0.7  # Default confidence score
-                })
-                
-                # Limit to max_claims
-                if len(extracted_claims) >= max_claims:
-                    break
-        
-        # If no claims were found, provide a helpful message
-        if not extracted_claims:
+        # Make request to Perplexity API
+        api_key = ctx.request_context.lifespan_context.perplexity_api_key
+        if not api_key:
+            logging.error("Perplexity API key not available for claim extraction")
             return json.dumps({
-                "message": "No clear claims were identified in the provided text.",
+                "message": "Error: Perplexity API key not available for claim extraction",
                 "claims": []
             }, indent=2)
+            
+        headers = {
+            "Authorization": f"Bearer {api_key}",
+            "Content-Type": "application/json"
+        }
         
-        # Return the extracted claims
+        payload = {
+            "model": "sonar", 
+            "messages": [
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": user_prompt}
+            ],
+            "temperature": 0.1,  # Low temperature for more deterministic responses
+            "max_tokens": 2048
+        }
+        
+        logging.info("Making request to Perplexity API for claim extraction")
+        
+        async with httpx.AsyncClient(timeout=30.0) as client:
+            response = await client.post(
+                "https://api.perplexity.ai/chat/completions",
+                headers=headers,
+                json=payload
+            )
+            
+            if response.status_code != 200:
+                logging.error(f"Perplexity API error: {response.status_code} - {response.text}")
+                return json.dumps({
+                    "message": "Error extracting claims: API request failed",
+                    "claims": []
+                }, indent=2)
+                
+            response_data = response.json()
+            llm_response = response_data["choices"][0]["message"]["content"]
+            
+            logging.info("Received response from Perplexity API")
+            
+            # Parse the response
+            # The LLM should return JSON, but we'll handle cases where it doesn't
+            try:
+                # Find JSON in the response if the LLM added any extra text
+                json_match = re.search(r'\[.*\]', llm_response, re.DOTALL)
+                if json_match:
+                    extracted_claims = json.loads(json_match.group(0))
+                else:
+                    extracted_claims = json.loads(llm_response)
+                
+                # If not a list (might be a dict with a 'claims' key), adjust accordingly
+                if isinstance(extracted_claims, dict) and "claims" in extracted_claims:
+                    extracted_claims = extracted_claims["claims"]
+                
+                # Ensure it's a list
+                if not isinstance(extracted_claims, list):
+                    extracted_claims = []
+                    
+                # Limit to max_claims
+                extracted_claims = extracted_claims[:max_claims]
+                
+            except (json.JSONDecodeError, IndexError) as e:
+                logging.error(f"Error parsing LLM response: {e}")
+                logging.error(f"Raw response: {llm_response}")
+                extracted_claims = []
+        
+        # Create result
         result = {
             "version": TRUTH_MCP_VERSION,
             "timestamp": _get_current_timestamp(),
             "message": f"Extracted {len(extracted_claims)} claim(s) from the provided text.",
-            "claims": extracted_claims
+            "claims": extracted_claims,
+            "llm_extracted": True
         }
         
         # Save response to a local JSON file

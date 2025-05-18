@@ -1,0 +1,23 @@
+{
+  "version": "1.4.0",
+  "timestamp": "2025-05-18T01:58:14.255015",
+  "message": "Extracted 3 claim(s) from the provided text.",
+  "claims": [
+    {
+      "claim": "Bob's Popsicle stand offers popsicles with flavors inspired by nature, such as a lake pop that tastes like ice and algae, and a mud pop that tastes gritty like dirt or mud.",
+      "claim_type": "factual",
+      "confidence": 1.0
+    },
+    {
+      "claim": "The lake pop has more character than the water coming out of a tap.",
+      "claim_type": "factual",
+      "confidence": 0.8
+    },
+    {
+      "claim": "There are mud pies, so mud pops are a natural extension of that idea.",
+      "claim_type": "normative",
+      "confidence": 0.7
+    }
+  ],
+  "llm_extracted": true
+}

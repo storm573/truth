@@ -1,0 +1,57 @@
+{
+  "version": "1.4.0",
+  "timestamp": "2025-05-18T00:42:54.336336",
+  "message": "Extracted 10 claim(s) from the provided text.",
+  "claims": [
+    {
+      "claim": "I ended up undertaking a book, which was going to be about the nature of families of high-achieving siblings.",
+      "claim_type": "predictive",
+      "confidence": 0.7
+    },
+    {
+      "claim": "And I went into the book fully expecting that I was going to hear these stories about parents who had these extraordinary ways of doing things and they inspired and motivated their kids.",
+      "claim_type": "predictive",
+      "confidence": 0.7
+    },
+    {
+      "claim": "And instead what I found was that although parents matter certainly, the parenting effect is actually probably smaller than we think.",
+      "claim_type": "factual",
+      "confidence": 0.7
+    },
+    {
+      "claim": "And what I found as I reported and researched was that sibling effects are actually more profound than have been realized.",
+      "claim_type": "factual",
+      "confidence": 0.7
+    },
+    {
+      "claim": "And they really do matter for kids in ways that I think researchers are just only now starting to appreciate.",
+      "claim_type": "factual",
+      "confidence": 0.7
+    },
+    {
+      "claim": "But the people who focus that arrow and who help it land somewhere, maybe someplace suitable, very often those are the siblings.",
+      "claim_type": "factual",
+      "confidence": 0.7
+    },
+    {
+      "claim": "This is the idea that kids are trying to find a niche as they're growing up.",
+      "claim_type": "factual",
+      "confidence": 0.7
+    },
+    {
+      "claim": "And so if one sibling is doing one thing, whether it's conscious or not, another sibling might go in a different direction or their parents might even push them in a different direction.",
+      "claim_type": "predictive",
+      "confidence": 0.7
+    },
+    {
+      "claim": "Sarah had these two older siblings who were very, very academic.",
+      "claim_type": "factual",
+      "confidence": 0.7
+    },
+    {
+      "claim": "And she felt that if she couldn't keep up with them, that was on her, she said, and that her desire to keep up with them was all about her relationship to them, much less her parents.",
+      "claim_type": "factual",
+      "confidence": 0.7
+    }
+  ]
+}

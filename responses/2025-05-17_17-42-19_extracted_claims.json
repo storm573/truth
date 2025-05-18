@@ -1,0 +1,57 @@
+{
+  "version": "1.4.0",
+  "timestamp": "2025-05-18T00:42:19.689970",
+  "message": "Extracted 10 claim(s) from the provided text.",
+  "claims": [
+    {
+      "claim": "This is The Daily.",
+      "claim_type": "factual",
+      "confidence": 0.7
+    },
+    {
+      "claim": "The New York Times Much of our understanding of what makes us who we are revolves around the role of our parents.",
+      "claim_type": "factual",
+      "confidence": 0.7
+    },
+    {
+      "claim": "Today, my colleague, Susan Dominas, on the unseen but surprisingly powerful ways that our lives are shaped by our siblings.",
+      "claim_type": "factual",
+      "confidence": 0.7
+    },
+    {
+      "claim": "It's Tuesday, May 13th.",
+      "claim_type": "predictive",
+      "confidence": 0.7
+    },
+    {
+      "claim": "It is really nice to see you.",
+      "claim_type": "factual",
+      "confidence": 0.7
+    },
+    {
+      "claim": "I want to jump in and I want to have you tell the story of how it is you became so interested in the subject of siblings.",
+      "claim_type": "factual",
+      "confidence": 0.7
+    },
+    {
+      "claim": "So, I think it started when I was a young child and my parents used to go away pretty often and travel for work.",
+      "claim_type": "factual",
+      "confidence": 0.7
+    },
+    {
+      "claim": "And when they did, I would stay with really close family friends.",
+      "claim_type": "predictive",
+      "confidence": 0.7
+    },
+    {
+      "claim": "And you may know that when you stay with a family, you really get to know them and their culture in a way that's different from your own family.",
+      "claim_type": "predictive",
+      "confidence": 0.7
+    },
+    {
+      "claim": "In one family I stayed with, the kids would do these very elaborate math problems, like at the table, you know.",
+      "claim_type": "predictive",
+      "confidence": 0.7
+    }
+  ]
+}
