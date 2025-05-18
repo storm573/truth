@@ -1,0 +1,341 @@
+{
+  "version": "1.3.0",
+  "claim": "The sky weighs five million billion tons.",
+  "claim_type": "factual",
+  "timestamp": "2025-05-18T00:28:22.117596",
+  "llm_confidence_analysis": false,
+  "perspectives": {
+    "supporting": {
+      "arguments": [
+        {
+          "text": "Even though we can\u2019t feel the weight of each individual air molecule, all together they <strong>weigh</strong> a lot! But how much does <strong>the</strong> <strong>sky</strong> actually <strong>weigh</strong>?",
+          "source_url": "https://www.brainson.org/episode/2023/02/28/how-heavy-is-the-sky",
+          "source_title": "How heavy is the sky? | Brains On",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T00:28:06.359172",
+          "llm_analyzed": false
+        },
+        {
+          "text": "It was the Greek mathematician Archimedes who said \u201cGive me a place to stand and I will move the Earth.\u201d The quote, a reference to the power of the lever, is an example of humanity\u2019s fascination with moving heavy objects. In keeping with that spirit, 24/7 Wall St. has identified the heaviest ...",
+          "source_url": "https://247wallst.com/special-report/2018/05/11/the-heaviest-objects-in-the-world/",
+          "source_title": "The Heaviest Objects in the World - 24/7 Wall St.",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T00:28:06.359188",
+          "llm_analyzed": false
+        },
+        {
+          "text": "And if you times that by how big the Earth is, <strong>some smart scientists have done some huge calculations and sums, they figured out the weight of the sky is roughly 5.2 million billion tonnes</strong>. That means the sky weighs 1,000,000th of the mass of the Earth, so it\u2019s very heavy.",
+          "source_url": "https://www.funkidslive.com/science-weekly/how-much-does-the-sky-weigh/",
+          "source_title": "How Much Does the Sky Weigh? - Fun Kids - the UK's children's radio station",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T00:28:06.359192",
+          "llm_analyzed": false
+        },
+        {
+          "text": "It&#x27;s always been a dilemma for humans: how to move that super-heavy object to a new place. But we always seem to find a way, don&#x27;t we?",
+          "source_url": "https://science.howstuffworks.com/engineering/structural/10-heaviest-objects-mankind-moved.htm",
+          "source_title": "10 Heaviest Objects Mankind Has Ever Moved | HowStuffWorks",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T00:28:06.359195",
+          "llm_analyzed": false
+        },
+        {
+          "text": "As the director of the Kirkpatrick Planetarium for several decades, I received many questions from kids on school field trips. They often centered around aliens: Do I believed they exist (I do), and \u2026",
+          "source_url": "https://www.oklahoman.com/story/lifestyle/2019/08/12/stargazing-how-much-does-the-sky-weigh/60441388007/",
+          "source_title": "Stargazing: How much does the sky weigh?",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T00:28:06.359198",
+          "llm_analyzed": false
+        },
+        {
+          "text": "Explain Like I&#x27;m <strong>Five</strong> is the best forum and archive on the internet for layperson-friendly explanations. Don&#x27;t Panic \u00b7 Create your account and connect with a world of communities",
+          "source_url": "https://www.reddit.com/r/explainlikeimfive/comments/1eujii6/eli5_if_the_average_cloud_weighs_1_million_pounds/?rdt=39091",
+          "source_title": "ELI5 If the average cloud weighs 1 million pounds how ...",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T00:28:06.359200",
+          "llm_analyzed": false
+        },
+        {
+          "text": "Today\u2019s Wonder of the Day is heavier than you might think!",
+          "source_url": "https://wonderopolis.org/wonder/How-Much-Does-the-Sky-Weigh",
+          "source_title": "How Much Does the Sky Weigh? | Wonderopolis",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T00:28:06.359202",
+          "llm_analyzed": false
+        },
+        {
+          "text": "Answer: We have to measure how strong gravity is for a given mass. From that we can calculate it for any mass. Since we know how strong Earth\u2019s gravity is, we can calculate backwards to get the mass of the Earth. For a very long time (until the late 18th century), we had no idea about the ...",
+          "source_url": "https://www.quora.com/How-do-they-know-that-the-Earth-weighs-5-972-billion-trillion-metric-tons",
+          "source_title": "How do they know that the Earth weighs 5,972 billion trillion metric tons? - Quora",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T00:28:06.359205",
+          "llm_analyzed": false
+        },
+        {
+          "text": "How much does the sky weigh? or is it weightless? The sky weighs <strong>6.6 kg per square inch of earth surface</strong> which is roughly 5.2 million billion metric tons.",
+          "source_url": "https://mocomi.com/how-much-does-the-sky-weigh/",
+          "source_title": "How much does the sky weigh? - Physics for Kids | Mocomi",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T00:28:06.359207",
+          "llm_analyzed": false
+        },
+        {
+          "text": "It&#x27;s a question you may have never asked, or wondered about, but now I bet you&#x27;re wondering. As it turns out, it&#x27;s an unexpectedly loaded question, too!",
+          "source_url": "https://thewildlife.blog/2022/08/29/how-much-does-the-sky-weigh/",
+          "source_title": "How Much Does the Sky Weigh?",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T00:28:06.359209",
+          "llm_analyzed": false
+        },
+        {
+          "text": "Find out how much a cloud <strong>weighs</strong> without putting in on a scale...",
+          "source_url": "https://weatherworksinc.com/news/how-much-does-a-cloud-weigh",
+          "source_title": "How Much Does a Cloud Weigh?",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T00:28:06.359211",
+          "llm_analyzed": false
+        },
+        {
+          "text": "That\u2019s how much <strong>sky</strong> there is ... oxygen (21%) \u2013 whose molecules aren\u2019t weightless. The whole atmosphere has been estimated to <strong>weigh</strong> over 5 <strong>million</strong> <strong>billion</strong> metric <strong>tons</strong>, but I find that quite meaningless....",
+          "source_url": "https://bat-bean-beam.blogspot.com/2016/02/the-weight-of-sky.html",
+          "source_title": "Bat, Bean, Beam: The weight of the sky",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T00:28:06.359213",
+          "llm_analyzed": false
+        },
+        {
+          "text": "I don&#x27;t know anyone who is afraid to walk underneath a cumulus cloud because they are afraid it might fall on them. We don&#x27;t think of clouds even having weight because they are floating. But, clouds are made up of a physical substance, water, and water is quite heavy, so clouds must have weight.",
+          "source_url": "https://www.usgs.gov/special-topics/water-science-school/science/how-much-does-a-cloud-weigh",
+          "source_title": "How Much Does a Cloud Weigh? | U.S. Geological Survey",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T00:28:06.359216",
+          "llm_analyzed": false
+        },
+        {
+          "text": "Answer (1 of 9): Water is useful here. It is 1g per cc, So a cube 1m to a side is one tonne = 1000kg. So a <strong>million</strong> is quite easy, an Olympic swimming pool is 50m long x 25m wide. So even if it were only a metre deep, then already this is more than a <strong>million</strong> kg (1.25 <strong>million</strong> kg). For a billio...",
+          "source_url": "https://www.quora.com/How-do-I-visualise-a-1-million-kg-What-on-Earth-is-this-heavy",
+          "source_title": "How to visualise a 1 million kg? What on Earth is this heavy - Quora",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T00:28:06.359218",
+          "llm_analyzed": false
+        },
+        {
+          "text": "Answer (1 of 14): 1. Great Wall of China; 116 <strong>billion</strong> pounds 2. Three Gorges Dam (China); 20.8 <strong>billion</strong> pounds 3. Great Pyramid of Khufu (Egypt); 12 <strong>billion</strong> pounds Source : 10 heaviest objects on Earth",
+          "source_url": "https://www.quora.com/What-is-the-heaviest-manmade-thing-object-in-the-world",
+          "source_title": "What is the heaviest manmade thing/object in the world? - Quora",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T00:28:06.359220",
+          "llm_analyzed": false
+        },
+        {
+          "text": "Answer (1 of 14): First of all, there\u2019s never been an airplane <strong>that</strong> <strong>weighs</strong> \u201cthousands of <strong>tons</strong>\u201d. Large aircraft may <strong>weigh</strong> in the hundreds of <strong>tons</strong> (small aircraft can <strong>weigh</strong> less than a single <strong>ton</strong>). As far as I\u2019ve been able to tell, the heaviest aircraft in the world is the AN-225, which ...",
+          "source_url": "https://www.quora.com/How-does-an-airplane-that-weighs-lots-of-tons-go-up-in-the-sky",
+          "source_title": "How does an airplane that weighs lots of tons go up in the sky? - Quora",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T00:28:06.359223",
+          "llm_analyzed": false
+        },
+        {
+          "text": "A Cloud Actually <strong>Weighs</strong> Hundreds Of <strong>Tons</strong>? How Did It Float in <strong>The</strong> <strong>Sky</strong>!",
+          "source_url": "https://www.jidemachinery.com/news/a-cloud-actually-weighs-hundreds-of-tons-how-64310027.html",
+          "source_title": "A Cloud Actually Weighs Hundreds Of Tons? How Did It Float in The Sky! - News - Dongguan JIDE Precision Machinery Co., Ltd",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T00:28:06.359225",
+          "llm_analyzed": false
+        },
+        {
+          "text": "Answer (1 of 12): 10,000,000,000,000,000,000 lbs. The mass of the atmosphere (<strong>sky</strong>) is about 5.15\u00d710^18 kg Atmosphere of Earth - Wikipedia As we go up in the atmosphere the force of gravity decreases, but since our mass is a pretty rough estimate, the change from sea level up to the edge of the ...",
+          "source_url": "https://www.quora.com/How-much-does-the-sky-weigh-1",
+          "source_title": "How much does the sky weigh? - Quora",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T00:28:06.359227",
+          "llm_analyzed": false
+        },
+        {
+          "text": "This is the latest accepted revision, reviewed on 13 May 2025. While the future cannot be predicted with certainty, present understanding in various scientific fields allows for the prediction of some far-future events, if only in the broadest outline. These fields include astrophysics, which ...",
+          "source_url": "https://en.wikipedia.org/wiki/Timeline_of_the_far_future",
+          "source_title": "Timeline of the far future - Wikipedia",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T00:28:06.359229",
+          "llm_analyzed": false
+        },
+        {
+          "text": "It&#x27;s not easy to imagine an object <strong>that</strong> <strong>weighs</strong> 800 <strong>tons</strong>. An eight hundred-<strong>ton</strong> object <strong>weighs</strong> over 1 <strong>million</strong> pounds \u2014 1,760,000 pounds to be exact.",
+          "source_url": "https://weightofstuff.com/8-things-that-weigh-about-800-tons/",
+          "source_title": "8 Things That Weigh About 800 Tons",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T00:28:06.359232",
+          "llm_analyzed": false
+        }
+      ],
+      "total_results_found": 200,
+      "prevalence_score": 0.5
+    },
+    "opposing": {
+      "arguments": [
+        {
+          "text": "It was the Greek mathematician Archimedes who said \u201cGive me a place to stand and I will move the Earth.\u201d The quote, a reference to the power of the lever, is an example of humanity\u2019s fascination with moving heavy objects. In keeping with that spirit, 24/7 Wall St. has identified the heaviest ...",
+          "source_url": "https://247wallst.com/special-report/2018/05/11/the-heaviest-objects-in-the-world/",
+          "source_title": "The Heaviest Objects in the World - 24/7 Wall St.",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T00:28:15.826611",
+          "llm_analyzed": false
+        },
+        {
+          "text": "Today\u2019s Wonder of the Day is heavier than you might think!",
+          "source_url": "https://wonderopolis.org/wonder/How-Much-Does-the-Sky-Weigh",
+          "source_title": "How Much Does the Sky Weigh? | Wonderopolis",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T00:28:15.826625",
+          "llm_analyzed": false
+        },
+        {
+          "text": "<strong>The Troll A, an offshore natural gas drilling platform off the west coast of Norway</strong>, weighs an astonishing 1.2 million tons (1.1 million metric tons) and stands 1,548 feet (471.8 meters) tall, which makes it both the heaviest and the tallest thing that people have transported from one spot ...",
+          "source_url": "https://science.howstuffworks.com/engineering/structural/10-heaviest-objects-mankind-moved.htm",
+          "source_title": "10 Heaviest Objects Mankind Has Ever Moved | HowStuffWorks",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T00:28:15.826629",
+          "llm_analyzed": false
+        },
+        {
+          "text": "That\u2019s how much sky there is ... and oxygen (21%) \u2013 whose molecules aren\u2019t weightless. <strong>The whole atmosphere has been estimated to weigh over 5 million billion metric tons, but I find that quite meaningless</strong>....",
+          "source_url": "https://bat-bean-beam.blogspot.com/2016/02/the-weight-of-sky.html",
+          "source_title": "Bat, Bean, Beam: The weight of the sky",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T00:28:15.826633",
+          "llm_analyzed": false
+        },
+        {
+          "text": "I don&#x27;t know anyone who is afraid to walk underneath a cumulus cloud because they are afraid it might fall on them. We don&#x27;t think of clouds even having weight because they are floating. But, clouds are made up of a physical substance, water, and water is quite heavy, so clouds must have weight.",
+          "source_url": "https://www.usgs.gov/special-topics/water-science-school/science/how-much-does-a-cloud-weigh",
+          "source_title": "How Much Does a Cloud Weigh? | U.S. Geological Survey",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T00:28:15.826636",
+          "llm_analyzed": false
+        },
+        {
+          "text": "Answer: We have to measure how strong gravity is for a given mass. From that we can calculate it for any mass. Since we know how strong Earth\u2019s gravity is, we can calculate backwards to get the mass of the Earth. For a very long time (until the late 18th century), we had no idea about the ...",
+          "source_url": "https://www.quora.com/How-do-they-know-that-the-Earth-weighs-5-972-billion-trillion-metric-tons",
+          "source_title": "How do they know that the Earth weighs 5,972 billion trillion metric tons? - Quora",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T00:28:15.826640",
+          "llm_analyzed": false
+        },
+        {
+          "text": "A congressman revealed he is 100 percent sure he has seen compelling <strong>evidence</strong> of UFOs, which be claims defy &#x27;defy physics as we know it,&#x27; yet the government is covering them up.",
+          "source_url": "https://www.dailymail.co.uk/sciencetech/article-12271763/amp/Congressman-intelligence-committee-says-UFOs-defy-physics-know-fly-underwater.html",
+          "source_title": "Congressman on intelligence committee says UFOs 'defy physics as we know it and fly underwater'",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T00:28:15.826644",
+          "llm_analyzed": false
+        },
+        {
+          "text": "Find out how much a cloud <strong>weighs</strong> without putting in on a scale...",
+          "source_url": "https://weatherworksinc.com/news/how-much-does-a-cloud-weigh",
+          "source_title": "How Much Does a Cloud Weigh?",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T00:28:15.826648",
+          "llm_analyzed": false
+        },
+        {
+          "text": "Answer (1 of 14): 1. Great Wall of China; 116 <strong>billion</strong> pounds 2. Three Gorges Dam (China); 20.8 <strong>billion</strong> pounds 3. Great Pyramid of Khufu (Egypt); 12 <strong>billion</strong> pounds Source : 10 heaviest objects on Earth",
+          "source_url": "https://www.quora.com/What-is-the-heaviest-manmade-thing-object-in-the-world",
+          "source_title": "What is the heaviest manmade thing/object in the world? - Quora",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T00:28:15.826653",
+          "llm_analyzed": false
+        },
+        {
+          "text": "Answer (1 of 9): Water is useful here. It is 1g per cc, So a cube 1m to a side is one tonne = 1000kg. So a <strong>million</strong> is quite easy, an Olympic swimming pool is 50m long x 25m wide. So even if it were only a metre deep, then already this is more than a <strong>million</strong> kg (1.25 <strong>million</strong> kg). For a billio...",
+          "source_url": "https://www.quora.com/How-do-I-visualise-a-1-million-kg-What-on-Earth-is-this-heavy",
+          "source_title": "How to visualise a 1 million kg? What on Earth is this heavy - Quora",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T00:28:15.826657",
+          "llm_analyzed": false
+        },
+        {
+          "text": "Satellite data show that Antarctica and Greenland are losing hundreds of gigatonnes of ice each year. How big is just one gigatonne?",
+          "source_url": "https://science.nasa.gov/earth/climate-change/visualizing-the-quantities-of-climate-change/",
+          "source_title": "Visualizing the Quantities of Climate Change - NASA Science",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T00:28:15.826661",
+          "llm_analyzed": false
+        },
+        {
+          "text": "In a troubling indicator of the state of science denialism, James Webb Space Telescope findings were twisted to undermine the Big Bang theory.",
+          "source_url": "https://www.space.com/james-webb-space-telescope-science-denial",
+          "source_title": "The James Webb Space Telescope never disproved the Big Bang. Here's how that falsehood spread.",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T00:28:15.826665",
+          "llm_analyzed": false
+        },
+        {
+          "text": "Records change on a daily basis and are not immediately published online. For a full list of record titles, please use our Record Application Search. (You will need to register / login for access) \u00b7 Comments below may relate to previous holders of this record",
+          "source_url": "https://www.guinnessworldrecords.com/world-records/heaviest-object-weighed",
+          "source_title": "Heaviest object weighed | Guinness World Records",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T00:28:15.826688",
+          "llm_analyzed": false
+        },
+        {
+          "text": "Here we debunk some of the most common and enduring space conspiracy theories.",
+          "source_url": "https://www.space.com/36751-space-conspiracies.html",
+          "source_title": "25 biggest space conspiracy theories: Debunked | Space",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T00:28:15.826700",
+          "llm_analyzed": false
+        },
+        {
+          "text": "15K votes, 734 comments. 28M subscribers in the space community. Share &amp; discuss informative content on: * Astrophysics * Cosmology * Space\u2026",
+          "source_url": "https://www.reddit.com/r/space/comments/eppqvz/a_tablespoonful_of_neutron_star_placed_on_earths/",
+          "source_title": "r/space on Reddit: A tablespoonful of neutron star placed on Earth's surface would weigh more than 1 billion tons, or about as much as Mount Everest (for reference, a tablespoonful of the Sun would only weigh about 5 pounds).",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T00:28:15.826704",
+          "llm_analyzed": false
+        },
+        {
+          "text": "504 votes, 90 comments. 117K subscribers in the HypixelSkyblock community. The official unofficial Hypixel Skyblock subreddit! [Not affiliated with\u2026",
+          "source_url": "https://www.reddit.com/r/HypixelSkyblock/comments/jilwhq/this_chest_weighs_over_225_trillion_pounds_over/",
+          "source_title": "r/HypixelSkyblock on Reddit: This chest weighs over 22.5 trillion pounds (over 10 billion metric tons) and fits in less than 2 cubic meters. (Jumbo backpacks with enchanted gold blocks)",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T00:28:15.826709",
+          "llm_analyzed": false
+        },
+        {
+          "text": "The amount of concrete, asphalt, metal, and plastic on Earth is growing fast. This year may mark the point when artificial stuff outweighs living things.",
+          "source_url": "https://www.nationalgeographic.com/environment/article/human-made-materials-now-equal-weight-of-all-life-on-earth",
+          "source_title": "Human-made materials now equal weight of all life on Earth",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T00:28:15.826736",
+          "llm_analyzed": false
+        },
+        {
+          "text": "Some things (death, taxes) are unavoidable; others are simply immovable. The heaviest objects in the world have been rated by 24/7 Wall St. , which examined the numbers based...",
+          "source_url": "https://www.newser.com/story/259238/the-10-heaviest-objects-on-earth.html",
+          "source_title": "Here are the 10 heaviest objects on Earth",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T00:28:15.826741",
+          "llm_analyzed": false
+        },
+        {
+          "text": "How much does <strong>the</strong> <strong>sky</strong> <strong>weigh</strong>? or is it weightless? <strong>The</strong> <strong>sky</strong> <strong>weighs</strong> 6.6 kg per square inch of earth surface which is roughly 5.2 <strong>million</strong> <strong>billion</strong> metric <strong>tons</strong>.",
+          "source_url": "https://mocomi.com/how-much-does-the-sky-weigh/",
+          "source_title": "How much does the sky weigh? - Physics for Kids | Mocomi",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T00:28:15.826745",
+          "llm_analyzed": false
+        },
+        {
+          "text": "NASA.gov brings you <strong>the</strong> latest news, images and videos from America&#x27;s space agency, pioneering <strong>the</strong> future in space exploration, scientific discovery and aeronautics research.",
+          "source_url": "https://www.nasa.gov/wp-content/uploads/2020/12/not_yet_imagined_tagged.pdf",
+          "source_title": "Nasa",
+          "confidence": 0.7,
+          "timestamp": "2025-05-18T00:28:15.826749",
+          "llm_analyzed": false
+        }
+      ],
+      "total_results_found": 200,
+      "prevalence_score": 0.5
+    }
+  }
+}

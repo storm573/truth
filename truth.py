@@ -19,7 +19,7 @@ from typing import List, Dict, Any, Optional, Tuple, Union
 load_dotenv()
 
 # Truth-Seeking MCP version number (increment with each change)
-TRUTH_MCP_VERSION = "1.3.0"
+TRUTH_MCP_VERSION = "1.4.0"
 
 # Default user ID for memory operations if using mem0
 DEFAULT_USER_ID = "user"
@@ -484,6 +484,102 @@ async def _save_response_to_file(claim: str, result: Dict[str, Any]) -> None:
     except Exception as e:
         logging.error(f"Error saving response to file: {str(e)}")
         # Don't raise the exception - this is a non-critical operation
+
+@mcp.tool()
+async def extract_claim(ctx: Context, text: str, max_claims: int = 5) -> str:
+    """Extract factual, predictive, or normative claims from a large text input.
+    
+    Args:
+        ctx: The MCP server provided context
+        text: The text content to analyze for claims
+        max_claims: Maximum number of claims to extract (default: 5)
+        
+    Returns:
+        JSON formatted list of extracted claims with their types
+    """
+    try:
+        # Prepare the extracted claims list
+        extracted_claims = []
+        
+        # Split text into sentences
+        sentences = re.split(r'(?<=[.!?])\s+', text)
+        
+        # List of claim signal phrases and patterns
+        claim_signals = [
+            "is", "are", "was", "were", "will", "shall", "should", "must", "can", "could",
+            "may", "might", "would", "ought to", "need to", "have to", "has to",
+            "always", "never", "every", "all", "none", "most", "many", "few", "some",
+            "because", "therefore", "thus", "hence", "clearly", "obviously", "evidently",
+            "research shows", "studies indicate", "according to", "experts say", "evidence suggests",
+            "I believe", "I think", "in my opinion", "I argue", "it is argued", "we know"
+        ]
+        
+        # Regular expressions for claims
+        factual_pattern = r'\b(is|are|was|were|has been|have been|exists|occurred|happened|resulted|caused|led to)\b'
+        predictive_pattern = r'\b(will|going to|shall|would|could|might|may|expect|predict|forecast|project|anticipate|foresee)\b'
+        normative_pattern = r'\b(should|must|ought to|need to|have to|has to|better|best|worse|worst|good|bad|right|wrong|important|necessary|essential|critical|vital)\b'
+        
+        # Process each sentence to identify potential claims
+        for sentence in sentences:
+            # Skip very short sentences
+            if len(sentence.split()) < 4:
+                continue
+                
+            # Skip questions
+            if sentence.endswith("?") or sentence.lower().startswith("who ") or sentence.lower().startswith("what ") or \
+               sentence.lower().startswith("when ") or sentence.lower().startswith("where ") or \
+               sentence.lower().startswith("why ") or sentence.lower().startswith("how "):
+                continue
+            
+            # Check if sentence contains claim signals
+            has_signal = any(signal.lower() in sentence.lower() for signal in claim_signals)
+            
+            # Identify claim type
+            claim_type = None
+            if re.search(normative_pattern, sentence.lower()):
+                claim_type = "normative"
+            elif re.search(predictive_pattern, sentence.lower()):
+                claim_type = "predictive"
+            elif re.search(factual_pattern, sentence.lower()):
+                claim_type = "factual"
+            
+            # If it has a signal and we identified the type, add it to extracted claims
+            if has_signal and claim_type and len(sentence.strip()) > 0:
+                # Clean up sentence (remove extra whitespace)
+                clean_sentence = re.sub(r'\s+', ' ', sentence).strip()
+                
+                # Add to extracted claims
+                extracted_claims.append({
+                    "claim": clean_sentence,
+                    "claim_type": claim_type,
+                    "confidence": 0.7  # Default confidence score
+                })
+                
+                # Limit to max_claims
+                if len(extracted_claims) >= max_claims:
+                    break
+        
+        # If no claims were found, provide a helpful message
+        if not extracted_claims:
+            return json.dumps({
+                "message": "No clear claims were identified in the provided text.",
+                "claims": []
+            }, indent=2)
+        
+        # Return the extracted claims
+        result = {
+            "version": TRUTH_MCP_VERSION,
+            "timestamp": _get_current_timestamp(),
+            "message": f"Extracted {len(extracted_claims)} claim(s) from the provided text.",
+            "claims": extracted_claims
+        }
+        
+        # Save response to a local JSON file
+        await _save_response_to_file("extracted_claims", result)
+        
+        return json.dumps(result, indent=2)
+    except Exception as e:
+        return f"Error extracting claims: {str(e)}"
 
 @mcp.tool()
 async def get_perspective_history(ctx: Context, query: str, limit: int = 3) -> str:
